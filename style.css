@@ -1,0 +1,218 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "freight Big Pro";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  background-color: white;
+}
+
+#loader {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 11;
+}
+
+#yellow1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #f5e41b;
+  z-index: 8;
+}
+
+#yellow2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #f5e41b;
+  z-index: 7;
+}
+
+#loader > h1 {
+  color: white;
+  font-size: 6.5vw;
+  font-weight: 100;
+  line-height: 5vw;
+  letter-spacing: -3px;
+  position: relative;
+  z-index: 9;
+}
+
+#loader > video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 6;
+}
+
+#nav {
+  position: absolute;
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 10;
+}
+
+#nav svg {
+  color: #000;
+}
+
+#nav-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-right a {
+  padding: 5px 5px;
+  margin-right: 55px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5e41b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#page1 > h1 {
+  font-size: 6.5vw;
+  font-weight: 100;
+  line-height: 5vw;
+  letter-spacing: -3px;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-image: url(https://works.studio/assets/imager/images/the-lion-king-the-gift/8572/Beyonce-Lion-King-The-Gift-Deluxe-Album-Cover_WORKS_0be67f6425c95e0e40cce41a8b15564b.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.elem {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.elem h2 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  line-height: 6vw;
+  font-weight: 100;
+  position: relative;
+  z-index: 9;
+}
+
+.elem .moving {
+  width: 100%;
+  white-space: nowrap;
+  padding: 8px 0px;
+  background-color: #f5e41b;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -45%) scaleY(0);
+  transition: all ease 0.5s;
+}
+
+.elem .moving .movingin {
+  display: inline-block;
+  animation-name: moving;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.elem .moving .movingin h5 {
+  color: #000;
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2vw;
+  margin-right: 30px;
+}
+
+@keyframes moving {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+
+.elem:hover .moving {
+  transform: translate(0, -50%) scaleY(1);
+}
+
+.elem:hover h2 {
+  color: #000;
+  font-style: italic;
+}
+
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: green;
+  background-image: url(https://works.studio/assets/imager/images/futurevvorld/17915/FUTUREVVORLD-Brand-Identity-Photography-Gallery_WORKS_1a58980f77ae6d8c6a1e26c40e92a05d.jpg);
+}
+
+#footer {
+  height: 40vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#footer #foot {
+  height: 50%;
+  width: 100%;
+  background-color: black;
+}
+
+#footer h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  cursor: pointer;
+  color: black;
+}
